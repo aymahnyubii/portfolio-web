@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="com-screen">
+      <header id="home-section">
+        <nav>
+          <div class="logo" style="font-family: 'Open Sans', sansans-serifs">
+            @Suturoberri
+          </div>
+          <label class="hamburger" id="showMenu">
+            <input type="checkbox" onclick="toggleSidebar()" />
+            <svg viewBox="0 0 32 32">
+              <path
+                class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+              ></path>
+              <path class="line" d="M7 16 27 16"></path>
+            </svg>
+          </label>
+        </nav>
+
+        <div class="side-bar" id="sideBar">
+          <div class="sidebar-logo">
+            <img src="images/strawberri-icon.png" alt="" />
+          </div>
+          <h3>SUTUROBERRI</h3>
+          <div class="sidebar-socials">
+            <a href="https://www.instagram.com/yourusername">
+              <div class="sidebar-social-icons">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/yourusername">
+              <div class="sidebar-social-icons">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/yourusername">
+              <div class="sidebar-social-icons">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/yourusername">
+              <div class="sidebar-social-icons">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="sidebar-nav">
+            <ul>
+              <li>
+                <a href="#home-section" class="underline"
+                  ><i class="fas fa-home"></i>&nbsp Home</a
+                >
+              </li>
+              <li>
+                <a href="#about-section" class="underline"
+                  ><i class="fas fa-user"></i>&nbsp About</a
+                >
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="#progress-section"><i class="fas fa-chart-line"></i>&nbsp&nbspProgress</a>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <div class="link-center">
+                      <a href="#tech-section"><i class="fas fa-cogs"></i>&nbsp
+                        Tech Skill</a>
+                      <a href="#software-section"><i class="fas fa-laptop-code"></i>&nbsp Software Skill</a>
+                      <a href=""><i class="fas fa-certificate"></i>&nbsp Certificates</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="underline"
+                  ><i class="fas fa-briefcase"></i>&nbsp Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#gallery-anchor" class="underline">
+                  <i class="fas fa-tools"></i>&nbsp Service</a
+                >
+              </li>
+              <li>
+                <a href="#contact-anchor" class="underline">
+                  <i class="fas fa-envelope"></i>&nbsp Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- <i class="fas fa-cogs"></i>
+          <i class="fas fa-comments"></i>
+          <i class="fas fa-certificate"></i>
+          <i class="fas fa-images"></i> -->
+          <!-- <div class="hidden-social-flag">
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.facebook.com/yourpage"
+                  ><i class="fab fa-facebook"> </i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/yourusername"
+                  ><i class="fab fa-twitter"> </i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/yourusername"
+                  ><i class="fab fa-instagram"> </i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/yourprofile"
+                  ><i class="fab fa-linkedin"> </i
+                ></a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <div class="hero-section">
+          <div class="hero">
+            <h1>Welcome to Dontier's digital playground of imagination</h1>
+            <br />
+            <p>Where ideas are turned into reality one pixel at a time.</p>
+            <br />
+            <a href="#about-section" class="hero-btn">
+              <button class="about-btn">
+                <span class="abt-n">Click to know me</span>
+                <div class="top"></div>
+                <div class="left"></div>
+                <div class="bottom"></div>
+                <div class="right"></div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </header>
+      <br />
+      <br />
+      <main>
+        <section id="about-section">
+          About
+          <div class="about-container">
+            <div class="about-content">
+              <h1>DON OMAPAS</h1>
+              <p class="detail-1">
+                I'm a self-proclaimed programmer and cybersecurity enthusiast,
+                specializing in web development and threat hunting.
+              </p>
+            </div>
+            <div class="about-content">
+              <div class="about-img">
+                <img src="images/profile2.png" alt="" />
+              </div>
+              <div class="about-text">
+                <h5>
+                  <!-- Executive Director of <span alt="my Imaginary Company">mIC</span> -->
+                  Front-End developer | Threat Hunter
+                </h5>
+                <p class="skill-detail">
+                  As a web developer, I specialize in crafting engaging online
+                  experiences. Additionally, I'm passionate about cybersecurity,
+                  working to keep digital environments safe and secure.
+                  <!-- As a programmer, I thrive on solving problems and building
+                  solutions that make a difference. With a keen eye for detail and a
+                  love for coding, I first specialize in Front-end development. From
+                  crafting elegant websites to developing robust applications, I'm
+                  dedicated to turning ideas into reality, one line of code at a
+                  time. -->
+                </p>
+
+                <div class="profile-info">
+                  <span>
+                    <i class="material-icons">double_arrow</i>
+                    <p><b>Age</b> : 23</p>
+                  </span>
+                  <!-- <span>
+                    <i class="material-icons">double_arrow</i>
+                    <p>Degree : Nothing yet</p></span
+                  > -->
+
+                  <span>
+                    <i class="material-icons">double_arrow</i>
+                    <p><b>Phone</b> : 09231341238</p>
+                  </span>
+                  <span>
+                    <i class="material-icons">double_arrow</i>
+                    <p><b>Email</b> : sample@gmail.com</p>
+                  </span>
+                  <span>
+                    <i class="material-icons">double_arrow</i>
+                    <p><b>City</b> : Quezon City</p>
+                  </span>
+                  <span>
+                    <i class="material-icons">double_arrow</i>
+                    <p><b>Freelance</b> : Available</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <br /><br /><br />
+            <p class="detail-1">
+              After leaving college, I pursued self-learning in web
+              development, and cybersecurity for
+              almost four years. Despite lacking practical experience in
+              the field, I'm deeply committed to continuous learning and
+              growth. 
+            </p>
+            <section class="progress" id="progress-section">
+              Progress
+              <div class="about-container">
+                <div class="about-text" id="tech-section">
+                  <h5>TECHNICAL KNOWLEDGE</h5>
+                
+                  <p class="detail-1">These are the technical skills I've been developing.</p>
+                </div>
+                <div class="about-skill">
+                  <div class="skill-field">
+                    <h4>FRONTEND SKILL FIELD</h4>
+                    <div class="skill">
+                      <div class="skill-img">
+                        <span>HTML</span>
+                        <img src="images/html-icon.png" alt="" />
+                        <p>
+                          1<b>.</b>5 Years of Study <br />Field Exp <b>:</b> 1
+                          Month
+                        </p>
+                      </div>
+                      <div class="skill-img">
+                        <span>CSS</span>
+                        <img src="images/css-icon.png" alt="" />
+                        <p>1 Years of Study <br />Field Exp <b>:</b> 1 Month</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>JAVASCRIPT</span>
+                        <img src="images/js-icon.png" alt="" />
+                        <p>
+                          5 Months of Study <br />Field Exp <b>:</b> 1 Month
+                        </p>
+                      </div>
+                      <div class="skill-img">
+                        <span>UI DESIGN</span>
+                        <img src="images/ui-icon.png" alt="" class="uix" />
+                        <p>
+                          3 Months of Study <br />Field Exp <b>:</b> Nothing yet
+                        </p>
+                      </div>
+                      <div class="skill-img">
+                        <span>UX DESIGN</span>
+                        <img src="images/ux-icon.png" alt="" />
+                        <p>
+                          3 Months of Study <br />Field Exp <b>:</b> Nothing yet
+                        </p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-field">
+                    <h4>BACKEND SKILL FIELD</h4>
+                    <div class="skill">
+                      <div class="skill-img">
+                        <span>PHP</span>
+                        <img src="images/php-icon.png" alt="" class="icon-adjust" />
+                        <p>2 Months of Study <br />Field Exp : Nothing yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-field">
+                    <h4>CYBERSEC SKILL FIELD</h4>
+                    <div class="skill">
+                      <div class="skill-img">
+                        <span>PYTHON</span>
+                        <img src="images/python.png" alt="" />
+                        <p>3 Months of Study <br />Field Exp : Nothing yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>LINUX</span>
+                        <img src="images/linux-icon.png" alt="" />
+                        <p>2 Months of Study <br />Field Exp : Nothing yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>Virtual Machine</span>
+                        <img src="images/virtualmachine-icon.png" />
+                        <p>1 Month of Study <br />Field Exp : Nothing yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                      <div class="skill-img">
+                        <span>NO SKILL YET</span>
+                        <img />
+                        <p>No details yet</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-container">
+                  <div class="about-text" id="software-section">
+                    <h5>SOFTWARE KNOWLEDGE</h5>
+                    <p class="detail-1">
+                      Here are some of the software programs I'm familiar with.
+                    </p>
+                  </div>
+                  <div class="software-field">
+                    <div class="skill-field">
+                      <!-- <h4>BACKEND SKILL FIELD</h4> -->
+                      <div class="skill">
+                        <div class="skill-img">
+                          <span>VS Code</span>
+                          <img src="images/vscode-icon.png" alt=""  />
+                          <p>Performance : <br>Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Excel</span>
+                          <img src="images/excel.png" alt=""  />
+                          <p>Performance : <br>Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>MS Word</span>
+                          <img src="images/mword.png" alt=""  />
+                          <p>Performance : <br>Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Power Point</span>
+                          <img src="images/ppt.png" alt=""  />
+                          <p>Performance : <br>Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Photoshop</span>
+                          <img src="images/ps.png" alt=""  />
+                          <p>Performance : <br>Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Figma</span>
+                          <img src="images/figma.png" alt=""  />
+                          <p>Performance : <br>Average</p>
+                        </div>
+                      </div>
+                      <div class="skill" style="margin-top: 20px;">
+                        <div class="skill-img">
+                          <span>Filmora</span>
+                          <img src="images/filmora.png" alt=""  class="icon-adjust"/>
+                          <p>Performance : <br>Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Canva</span>
+                          <img src="images/canva.png" alt=""  class="icon-adjust"/>
+                          <p>Performance : <br>Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>VM Ware</span>
+                          <img src="images/vmware-icon.png" alt="" />
+                          <p>Performance : <br>Below Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Kali Linux</span>
+                          <img src="images/kali-icon.png" alt="" class="icon-adjust" />
+                          <p>Performance : <br>Below Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Xampp</span>
+                          <img src="images/xampp-icon.png" alt="" class="icon-adjust" />
+                          <p>Performance : <br>Below Average</p>
+                        </div>
+                        <div class="skill-img">
+                          <span>Debian</span>
+                          <img src="images/debian-icon.png" alt="" class="icon-adjust" />
+                          <p>Performance : <br>Below Average</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+              <br /><br /><br />
+              <br /><br /><br />
+              <br /><br /><br />
+              <br /><br /><br />
+              <br /><br /><br />
+              <br /><br /><br />
+              <br /><br /><br />
+              <br /><br /><br />
+              <br /><br /><br />
+            </section>
+          </div>
+        </section>
+        <br /><br /><br />
+        <br /><br /><br />
+        <br /><br /><br />
+        <section id="resume-section">Resume</section>
+        <section id="portfolio-section">Portfolio</section>
+        <section id="service-section">Service</section>
+        <section id="contact-section">Contact</section>
+      </main>
+      <footer></footer>
+    </div>
+ 
+    <div class="bar-buttons power off-screen">
+      <span onclick="transitionToPage('out.html')"><button>
+        <span><i class="fas fa-power-off"></i></span></button
+    ></span>
+    </div>
+    <div class="bar logo">
+      <p>&copy; SUTUROBERRI</p>
+    </div>
+    <div class="bar bar-menu">
+      <div class="bar-buttons">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/DondieeOmapas"
+              ><i class="fab fa-facebook"> </i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/yourusername"
+              ><i class="fab fa-twitter"> </i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/yourusername"
+              ><i class="fab fa-instagram"> </i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yourprofile" class="linkedin"
+              ><i class="fab fa-linkedin"> </i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="bar-buttons power">
+        <span onclick="transitionToPage('out.html')"><button>
+            <span><i class="fas fa-power-off"></i></span></button
+        ></span>
+      
+      </div>
+    </div>
+
+    <div class="keyboard">
+
+      <div class="first-keys">
+        <a href="#home-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"><i class="fas fa-home"></i> H o m e </span>
+          </button>
+        </a>
+        <a href="#about-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"><i class="fas fa-user"></i> A b o u t </span>
+          </button>
+        </a>
+        <a href="#progress-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"
+              ><i class="fas fa-chart-line"></i> P r o g r e s s
+            </span>
+          </button>
+        </a>
+      
+        <a href="#service-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"
+              ><i class="fas fa-tools"></i> S e r v i c e
+            </span>
+          </button>
+        </a>
+        <a href="#contact-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"
+              ><i class="fas fa-envelope"></i> C o n t a c t
+            </span>
+          </button>
+        </a>
+      </div>
+      <div class="first-keys">
+        <a href="#tech-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"
+              ><i class="fas fa-cogs"></i> T e c h n i c a l &nbsp S k i l l
+            </span>
+          </button>
+        </a>
+        <a href="#software-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"
+              ><i class="fas fa-laptop-code"></i> S o f t w a r e &nbsp S m a r t s
+          </button>
+        </a>
+
+        <a href="#about-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"
+              ><i class="fas fa-certificate"></i> C E R T I F I C A T E S
+            </span>
+          </button>
+        </a>
+        <a href="#portfolio-section"
+          ><button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"
+              ><i class="fas fa-briefcase"></i> P o r t f o l i o
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="keyboard-wd">&nbsp</div>
+    <script src="js/function.js"></script>
+  </body>
+</html>
+<!-- -->
